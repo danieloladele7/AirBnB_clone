@@ -1,5 +1,5 @@
-#!/usr/bin/python3
-"""Defines the City class."""
+#!/usr/bin/python
+""" holds class City"""
 from models.base_model import BaseModel
 
 
@@ -13,3 +13,7 @@ class City(BaseModel):
 
     state_id = ""
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """initializes city"""
+        super().__init__(*args, **kwargs)
